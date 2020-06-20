@@ -6,7 +6,7 @@ export default function Content() {
     const [ result, setResult ] = useState([])
 
     useEffect(() => {
-      getResult(`http://hn.algolia.com/api/v1/search?query=${query}&hitsPerPage=15&page=${currentPage}`);
+      getResult(`https://hn.algolia.com/api/v1/search?query=${query}&hitsPerPage=15&page=${currentPage}`);
     }, [ query, currentPage ] );
   
     async function getResult(url) {
